@@ -13,8 +13,9 @@ const newContent = ref("");
     <Link :href="route('inertia.show', { id: 50 })"
         >名前付きルートの確認です</Link
     ><br />
-    <input type="text" name="newTitle" v-model="newTitle" />
-    <input type="text" name="newContent" v-model="newContent" />
+    <input type="text" name="newTitle" v-model="newTitle" >{{ newTitle }}</input><br />
+    <input type="text" name="newContent" v-model="newContent" >{{ newContent }}</input><br />
+    
     <Link
         as="button"
         method="post"
